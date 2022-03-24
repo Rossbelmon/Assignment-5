@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+            <div class="id">
+            <label for="inputId" class="form-id">8 Digit Employee ID</label>
+            <input type="text" class="form-control" id="id" maxlength="8" required>
+            </div>
+            <div class="name">
+            <label for="inputName" class="form-name">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="ext">
+            <label for="inputExt" class="form-ext">4-Digit Extention</label>
+            <input type="text" class="form-control" id="ext" maxlength="4" required>
+            </div>
+            <div class="email">
+            <label for="inputEmail" class="form-email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="department">
+            <label for="inputDep" class="form-department">Department</label>
+            <input type="select" class="form-control" id="department" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="addemp">Add Employee</button>
+    </form>
+</body>
+</html>
